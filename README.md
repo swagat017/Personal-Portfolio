@@ -1,6 +1,6 @@
-# Swagat Nepal — AI/ML Engineer Portfolio
+# Swagat Nepal :- AI/ML Engineer Portfolio
 
-A production-ready personal portfolio built with Next.js (App Router), TypeScript, Tailwind CSS v4, and Framer Motion. Dark mode by default with a light mode toggle, a purple accent, and a design language grounded in the actual ML projects it showcases (real loss curves, real accuracy figures — no stock photos or generic charts).
+A production-ready personal portfolio built with Next.js (App Router), TypeScript, Tailwind CSS v4, and Framer Motion. Dark mode by default with a light mode toggle, a purple accent, and a design language grounded in the actual ML projects it showcases (real loss curves, real accuracy figures :- no stock photos or generic charts).
 
 ## Tech Stack
 
@@ -8,9 +8,9 @@ A production-ready personal portfolio built with Next.js (App Router), TypeScrip
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS v4 (CSS-variable-based theming, class-based dark mode)
 - **Animation:** Framer Motion
-- **Icons:** lucide-react (+ two custom brand SVGs for GitHub/LinkedIn — see note below)
+- **Icons:** lucide-react (+ two custom brand SVGs for GitHub/LinkedIn :- see note below)
 - **Forms:** react-hook-form + zod validation
-- **Fonts:** Geist (display), Inter (body), Geist Mono (data/code accents) — loaded via `next/font/google`
+- **Fonts:** Geist (display), Inter (body), Geist Mono (data/code accents) :- loaded via `next/font/google`
 
 ## Getting Started
 
@@ -70,7 +70,7 @@ public/
 **Almost everything is editable in one file: `src/lib/data.ts`.** No need to touch components for routine updates.
 
 ### Update personal info
-Edit the `personal` object — name, title, contact details, resume path, social links.
+Edit the `personal` object :- name, title, contact details, resume path, social links.
 
 ### Rewrite the About section
 Edit the `about.paragraphs` array.
@@ -93,16 +93,16 @@ Drop a new PDF at `public/resume.pdf` (same filename), or change `personal.resum
 Replace the files at `public/images/profile/profile-hero.webp` (used in Hero, portrait crop) and `public/images/profile/profile-square.webp` (used in About, square crop). Recommended: export at similar dimensions (1200×1500 and 900×900) and convert to WebP for performance.
 
 ### Change the theme accent
-All colors are CSS variables defined in `src/app/globals.css` under `:root` (light mode) and `.dark` (dark mode) — edit `--violet`, `--violet-strong`, `--violet-soft`, etc. there. Nothing else needs to change.
+All colors are CSS variables defined in `src/app/globals.css` under `:root` (light mode) and `.dark` (dark mode) :- edit `--violet`, `--violet-strong`, `--violet-soft`, etc. there. Nothing else needs to change.
 
 ### Update SEO / domain
 `src/app/layout.tsx`, `src/app/sitemap.ts`, and `src/app/robots.ts` all reference a `siteUrl` constant (currently a placeholder: `https://swagatnepal.dev`). Update this to your real domain once you have one, in all three files.
 
 ## Design Notes
 
-- **Signature motif:** a hand-drawn "loss curve" line (`components/ui/loss-curve.tsx`) echoes the training curves in the actual projects — used once in the hero, and the same idea powers the real per-epoch loss chart on the CNN project card.
+- **Signature motif:** a hand-drawn "loss curve" line (`components/ui/loss-curve.tsx`) echoes the training curves in the actual projects :- used once in the hero, and the same idea powers the real per-epoch loss chart on the CNN project card.
 - **Section eyebrows** use a code-comment style (`// 01 · about`) in monospace, reinforcing the engineer identity instead of generic numbered badges.
-- **Project visuals are not screenshots** — they're small inline SVG charts built from the real metrics in each project's README/CV (e.g., the CNN chart plots the actual 10-epoch loss values: 1.3788 → 0.1688). This keeps the visual language consistent and avoids relying on IDE/notebook screenshots.
+- **Project visuals are not screenshots** :- they're small inline SVG charts built from the real metrics in each project's README/CV (e.g., the CNN chart plots the actual 10-epoch loss values: 1.3788 → 0.1688). This keeps the visual language consistent and avoids relying on IDE/notebook screenshots.
 - **Skill bars** are styled as metric bars (with monospace `x/5` labels) rather than generic progress bars, in keeping with the ML-metrics vibe.
 
 ## Accessibility
@@ -124,13 +124,13 @@ All colors are CSS variables defined in `src/app/globals.css` under `:root` (lig
 
 ## A note on icons
 
-The installed version of `lucide-react` (v1.x) no longer ships brand/social icons (GitHub, LinkedIn, etc. were removed upstream). Two small custom SVG components (`GithubIcon`, `LinkedinIcon`) live in `src/components/ui/social-icons.tsx` as drop-in replacements — everything else uses `lucide-react` directly.
+The installed version of `lucide-react` (v1.x) no longer ships brand/social icons (GitHub, LinkedIn, etc. were removed upstream). Two small custom SVG components (`GithubIcon`, `LinkedinIcon`) live in `src/components/ui/social-icons.tsx` as drop-in replacements :- everything else uses `lucide-react` directly.
 
 ## Deploying to Vercel
 
 1. Push this project to a GitHub repository.
 2. Go to [vercel.com/new](https://vercel.com/new) and import the repository.
-3. Vercel auto-detects Next.js — no configuration needed. Click **Deploy**.
+3. Vercel auto-detects Next.js :- no configuration needed. Click **Deploy**.
 4. Once deployed, update `siteUrl` in `layout.tsx`, `sitemap.ts`, and `robots.ts` to your Vercel URL (or custom domain), commit, and redeploy.
 5. **Custom domain (optional):** In the Vercel project settings → Domains, add your domain and follow the DNS instructions Vercel provides.
 
@@ -138,4 +138,4 @@ Every subsequent push to your main branch redeploys automatically.
 
 ## License
 
-Personal project — content and photos belong to Swagat Nepal. Feel free to use the code structure as a template for your own portfolio.
+Personal project :- content and photos belong to Swagat Nepal. Feel free to use the code structure as a template for your own portfolio.
