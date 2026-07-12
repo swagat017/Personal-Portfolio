@@ -36,7 +36,7 @@ export const skills: SkillCategory[] = [
     category: "Programming",
     skills: [
       { name: "Python", level: 4 },
-      { name: "C / C++", level: 3 },
+      { name: "C / C++", level: 5 },
       { name: "SQL", level: 5 },
     ],
   },
@@ -61,7 +61,7 @@ export const skills: SkillCategory[] = [
     skills: [
       { name: "Pandas", level: 5 },
       { name: "NumPy", level: 5 },
-      { name: "Data Visualization", level: 4 },
+      { name: "Data Visualization", level: 5 },
     ],
   },
   {
@@ -69,7 +69,7 @@ export const skills: SkillCategory[] = [
     skills: [
       { name: "Git", level: 4 },
       { name: "Jupyter", level: 5 },
-      { name: "Matplotlib / Seaborn", level: 4 },
+      { name: "Matplotlib / Seaborn", level: 5 },
     ],
   },
 ];
