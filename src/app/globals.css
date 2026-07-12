@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  /* ---- Light mode ---- */
+  --paper: #FBFAFE;
+  --surface: #F2EFFA;
+  --surface-2: #E8E2F7;
+  --border-soft: #E3DEF0;
+  --ink: #17141F;
+  --slate: #6B6580;
+  --violet: #6D4CE8;
+  --violet-strong: #5B3AD6;
+  --violet-soft: #9B82F2;
+  --violet-tint: #EFE9FE;
+}
+
+.dark {
+  /* ---- Dark mode ---- */
+  --paper: #0B0A10;
+  --surface: #141220;
+  --surface-2: #1C1929;
+  --border-soft: #262238;
+  --ink: #F4F2FA;
+  --slate: #948FA8;
+  --violet: #8B6CF7;
+  --violet-strong: #A78BFA;
+  --violet-soft: #C7B8FF;
+  --violet-tint: #1E1935;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border-soft: var(--border-soft);
+  --color-ink: var(--ink);
+  --color-slate: var(--slate);
+  --color-violet: var(--violet);
+  --color-violet-strong: var(--violet-strong);
+  --color-violet-soft: var(--violet-soft);
+  --color-violet-tint: var(--violet-tint);
+
+  --font-display: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+  --animate-fade-up: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-draw: draw 1.4s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes draw {
+  to { stroke-dashoffset: 0; }
+}
+
+* {
+  border-color: var(--border-soft);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+::selection {
+  background: var(--violet);
+  color: white;
+}
+
+/* Subtle dotted notebook-grid texture, only visible faintly in hero */
+.grid-texture {
+  background-image: radial-gradient(var(--border-soft) 1px, transparent 1px);
+  background-size: 26px 26px;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Focus visibility for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--violet);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--paper); }
+::-webkit-scrollbar-thumb {
+  background: var(--surface-2);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--violet-soft); }
