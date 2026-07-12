@@ -1,5 +1,4 @@
 export function SectionHeading({
-  index,
   label,
   title,
   description,
@@ -12,8 +11,7 @@ export function SectionHeading({
   return (
     <div className="mb-14 max-w-2xl">
       <p className="font-mono text-sm text-violet mb-4">
-        {"// "}
-        {index} · {label}
+        {label}
       </p>
       <h2 className="font-display text-3xl sm:text-4xl font-medium tracking-tight text-ink">
         {title}
