@@ -14,15 +14,15 @@ export const personal = {
   resumeUrl: "/resume.pdf",
   headline: "Building machine learning systems that turn data into decisions.",
   intro:
-    "Final-year Computer Engineering student focused on applied AI/ML — from convolutional networks to classical ML pipelines — with a habit of shipping complete, end-to-end projects rather than notebooks that stop at a metric.",
+    "Final-year Computer Engineering student focused on applied AI/ML :- from convolutional networks to classical ML pipelines :- with a habit of shipping complete, end-to-end projects rather than notebooks that stop at a metric.",
 };
 
 export const about = {
   paragraphs: [
-    "I'm a final-year Computer Engineering student at IOE, Thapathali Campus, with a focus that narrowed early and hasn't wavered: teaching machines to find structure in data. What draws me to AI isn't the hype — it's the fact that there's always a deeper layer to understand, a better architecture to try, a sharper way to validate a result.",
-    "Most of what I know came from building rather than watching. I've taken projects from raw, messy datasets through preprocessing, modeling, and evaluation — comparing algorithms honestly instead of settling for the first one that works, and treating overfitting and data leakage as problems to actively guard against, not edge cases.",
+    "I'm a final-year Computer Engineering student at IOE, Thapathali Campus, with a focus that narrowed early and hasn't wavered: teaching machines to find structure in data. What draws me to AI isn't the hype :- it's the fact that there's always a deeper layer to understand, a better architecture to try, a sharper way to validate a result.",
+    "Most of what I know came from building rather than watching. I've taken projects from raw, messy datasets through preprocessing, modeling, and evaluation :- comparing algorithms honestly instead of settling for the first one that works, and treating overfitting and data leakage as problems to actively guard against, not edge cases.",
     "Engineering has been the plan since childhood, for a simple reason: it's a discipline built around solving problems that matter. AI/ML is where I've chosen to point that instinct. Long-term, I want to be the engineer teams trust to take a model from idea to something reliable in production.",
-    "Away from the keyboard, I'm usually watching or playing cricket with friends — a good reset before the next dataset.",
+    "Away from the keyboard, I'm usually watching or playing cricket with friends :- a good reset before the next dataset.",
   ],
 };
 
