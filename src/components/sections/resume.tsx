@@ -28,7 +28,7 @@ export function Resume() {
           <div className="rounded-2xl border border-border-soft bg-surface overflow-hidden">
             <div className="flex items-center justify-between border-b border-border-soft px-4 sm:px-6 py-3">
               <p className="font-mono text-xs text-slate">
-                {personal.name.toLowerCase().replace(" ", "_")}_resume.pdf
+                Swagat_Resume.pdf
               </p>
               <div className="flex items-center gap-1.5">
                 <button
