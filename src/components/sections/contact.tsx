@@ -174,7 +174,7 @@ export function Contact() {
                 )}
               </button>
               <p className="text-xs text-slate">
-                This opens your email client with the message pre-filled — no data is stored.
+                This opens your email client with the message pre-filled :- no data is stored.
               </p>
             </form>
           </Reveal>
