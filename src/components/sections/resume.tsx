@@ -21,7 +21,7 @@ export function Resume() {
           index="05"
           label="Resume"
           title="Resume"
-          description="Viewable directly below — use the controls to zoom in on any section."
+          description="Viewable directly below :- use the controls to zoom in on any section."
         />
 
         <Reveal>
