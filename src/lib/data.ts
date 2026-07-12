@@ -174,14 +174,14 @@ export const education: EducationItem[] = [
   {
     institution: "IOE, Thapathali Campus",
     degree: "Bachelor's in Computer Engineering",
-    duration: "Apr 2023 — Present",
+    duration: "Apr 2023 - Present",
     description:
       "Final-year Computer Engineering student focused on applied AI/ML, with coursework and self-directed projects spanning deep learning, classical machine learning, and data science.",
   },
   {
     institution: "NIST Banepa",
     degree: "+2 Science",
-    duration: "Jun 2020 — Jun 2022",
+    duration: "Jun 2020 - Jun 2022",
     description:
       "Completed higher secondary education in the science stream, building the mathematical foundation later applied to machine learning.",
   },
@@ -189,7 +189,7 @@ export const education: EducationItem[] = [
 
 export const certifications = [
   {
-    name: "PRIME — AI/ML Course",
+    name: "PRIME AI/ML Course",
     issuer: "Apna College",
     year: "2026",
   },
