@@ -122,7 +122,7 @@ export const projects: Project[] = [
     challenges:
       "Handling missing values and categorical features, engineering informative new features, and comparing multiple algorithms fairly without letting any one model overfit the engineered set.",
     learnings:
-      "That feature engineering — not just model choice — was the biggest lever on performance, and that precision/recall trade-offs matter more than raw accuracy in a lending context.",
+      "That feature engineering, not just model choice :- was the biggest lever on performance, and that precision/recall trade-offs matter more than raw accuracy in a lending context.",
     metric: { label: "Accuracy After Feature Engineering", value: "88%" },
   },
   {
@@ -158,7 +158,7 @@ export const projects: Project[] = [
     challenges:
       "Designing suitable architectures and activation functions for two different problem types, preventing overfitting, tuning hyperparameters, and evaluating results fairly against traditional ML baselines.",
     learnings:
-      "That a feedforward network is genuinely task-agnostic across regression and classification when the output layer and loss function are chosen correctly — and where it does and doesn't beat classical models.",
+      "That a feedforward network is genuinely task-agnostic across regression and classification when the output layer and loss function are chosen correctly :- and where it does and doesn't beat classical models.",
     metric: { label: "Regression R²", value: "0.93" },
   },
 ];
