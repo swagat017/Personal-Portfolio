@@ -108,7 +108,7 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
             className="mt-9 flex flex-wrap items-center gap-4"
           >
-            <Button href="#resume" variant="primary">
+            <Button href="#resume" variant="secondary">
               View Resume
             </Button>
             <Button href="#contact" variant="secondary">
