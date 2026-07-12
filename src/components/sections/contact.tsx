@@ -52,7 +52,7 @@ export function Contact() {
           index="06"
           label="Contact"
           title="Let's talk"
-          description="Open to internships and AI/ML roles — reach out directly or send a message below."
+          description="Open to internships and AI/ML roles - reach out directly or send a message below."
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-[0.85fr_1.15fr] gap-12 lg:gap-16">
