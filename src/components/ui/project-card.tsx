@@ -78,7 +78,7 @@ export function ProjectCard({ project }: { project: Project }) {
               <div className="mt-5 pt-5 border-t border-border-soft space-y-4">
                 <div>
                   <p className="font-mono text-[11px] text-violet mb-1.5">
-                    problem solved
+                    Problem Solved
                   </p>
                   <p className="text-sm text-ink/85 leading-relaxed">
                     {project.problem}
@@ -86,7 +86,7 @@ export function ProjectCard({ project }: { project: Project }) {
                 </div>
                 <div>
                   <p className="font-mono text-[11px] text-violet mb-1.5">
-                    challenges
+                    Challenges
                   </p>
                   <p className="text-sm text-ink/85 leading-relaxed">
                     {project.challenges}
@@ -94,7 +94,7 @@ export function ProjectCard({ project }: { project: Project }) {
                 </div>
                 <div>
                   <p className="font-mono text-[11px] text-violet mb-1.5">
-                    key learnings
+                    Key Learnings
                   </p>
                   <p className="text-sm text-ink/85 leading-relaxed">
                     {project.learnings}
