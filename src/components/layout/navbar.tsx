@@ -58,9 +58,9 @@ export function Navbar() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 sm:px-8 lg:px-10">
         <a
           href="#hero"
-          className="font-display text-sm font-semibold tracking-tight text-ink"
+          className="inline-block font-display text-2xl font-semibold tracking-tight text-ink transition-all duration-300 hover:scale-110 hover:[text-shadow:0_0_16px_var(--violet)]"
         >
-          {personal.name.split(" ")[0]}
+          {personal.name}
           <span className="text-violet">.</span>
         </a>
 
