@@ -4,10 +4,10 @@ import { GithubIcon, LinkedinIcon } from "@/components/ui/social-icons";
 import { personal } from "@/lib/data";
 
 const quickLinks = [
-  { href: "#about", label: "About" },
-  { href: "#projects", label: "Projects" },
-  { href: "#education", label: "Education" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#about", label: "About" },
+  { href: "/#projects", label: "Projects" },
+  { href: "/#education", label: "Education" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export function Footer() {

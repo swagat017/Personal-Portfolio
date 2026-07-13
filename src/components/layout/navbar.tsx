@@ -7,12 +7,12 @@ import { ThemeToggle } from "@/components/theme/theme-toggle";
 import { personal } from "@/lib/data";
 
 const links = [
-  { href: "#about", label: "About" },
-  { href: "#skills", label: "Skills" },
-  { href: "#projects", label: "Projects" },
-  { href: "#education", label: "Education" },
-  { href: "#resume", label: "Resume" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#about", label: "About" },
+  { href: "/#skills", label: "Skills" },
+  { href: "/#projects", label: "Projects" },
+  { href: "/#education", label: "Education" },
+  { href: "/resume", label: "Resume" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export function Navbar() {
@@ -29,6 +29,7 @@ export function Navbar() {
 
   useEffect(() => {
     const sections = links
+      .filter((l) => l.href.startsWith("#"))
       .map((l) => document.querySelector(l.href))
       .filter(Boolean) as Element[];
 
@@ -57,7 +58,7 @@ export function Navbar() {
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 sm:px-8 lg:px-10">
         <a
-          href="#hero"
+          href="/"
           className="inline-block font-display text-2xl font-semibold tracking-tight text-ink transition-all duration-300 hover:scale-110 hover:[text-shadow:0_0_16px_var(--violet)]"
         >
           {personal.name}
