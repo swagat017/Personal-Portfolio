@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Geist, Geist_Mono } from "next/font/google";
+import { Inter, Sora, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { personal } from "@/lib/data";
@@ -10,9 +10,10 @@ const inter = Inter({
   display: "swap",
 });
 
-const geist = Geist({
+const sora = Sora({
   subsets: ["latin"],
-  variable: "--font-geist",
+  variable: "--font-sora",
+  weight: ["500", "600"],
   display: "swap",
 });
 
@@ -105,7 +106,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${inter.variable} ${geist.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${sora.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider>{children}</ThemeProvider>
       </body>
