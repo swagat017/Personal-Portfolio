@@ -114,7 +114,9 @@ export function Navbar() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    onClick={() => setMenuOpen(false)}
+                    onClick={() => {
+                      setTimeout(() => setMenuOpen(false), 150)
+                    }}
                     className={`block rounded-lg px-3 py-2.5 transition-colors ${
                       active === link.href
                         ? "text-violet bg-violet-tint"
