@@ -48,6 +48,24 @@ export function Navbar() {
     return () => observer.disconnect();
   }, []);
 
+  const handleMobileNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    const isSamePageHash = href.startsWith("/#");
+
+    if (isSamePageHash && window.location.pathname === "/") {
+      e.preventDefault();
+      setMenuOpen(false);
+      const id = href.replace("/#", "");
+      setTimeout(() => {
+        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+      }, 300);
+    } else {
+      setMenuOpen(false);
+    }
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -114,9 +132,7 @@ export function Navbar() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    onClick={() => {
-                      setTimeout(() => setMenuOpen(false), 150)
-                    }}
+                    onClick={(e) => handleMobileNavClick(e, link.href)}
                     className={`block rounded-lg px-3 py-2.5 transition-colors ${
                       active === link.href
                         ? "text-violet bg-violet-tint"

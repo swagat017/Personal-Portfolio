@@ -3,6 +3,7 @@ import { Inter, Sora, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { personal } from "@/lib/data";
+import { ScrollToHash } from "@/components/scroll-to-hash";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -108,7 +109,10 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${sora.variable} ${geistMono.variable} antialiased`}
       >
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <ScrollToHash />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
