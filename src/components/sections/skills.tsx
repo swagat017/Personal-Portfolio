@@ -1,29 +1,15 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Reveal } from "@/components/ui/reveal";
 import { skills } from "@/lib/data";
 
-function SkillBar({ name, level }: { name: string; level: number }) {
-  const pct = (level / 5) * 100;
+function SkillTag({ name }: { name: string }) {
   return (
-    <div>
-      <div className="flex items-baseline justify-between mb-2">
-        <span className="text-sm text-ink">{name}</span>
-        <span className="font-mono text-xs text-slate">{level}/5</span>
-      </div>
-      <div className="h-1.5 w-full rounded-full bg-surface-2 overflow-hidden">
-        <motion.div
-          initial={{ width: 0 }}
-          whileInView={{ width: `${pct}%` }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-          className="h-full rounded-full bg-gradient-to-r from-violet-soft to-violet"
-        />
-      </div>
-    </div>
+    <span className="inline-block rounded-full border border-border-soft bg-surface-2 px-3.5 py-1.5 text-sm text-ink transition-colors hover:border-violet hover:text-violet">
+      {name}
+    </span>
   );
 }
 
@@ -45,9 +31,9 @@ export function Skills() {
                 <p className="font-mono text-xs text-violet mb-5 uppercase tracking-wide">
                   {group.category}
                 </p>
-                <div className="space-y-5">
+                <div className="flex flex-wrap gap-2.5">
                   {group.skills.map((s) => (
-                    <SkillBar key={s.name} name={s.name} level={s.level} />
+                    <SkillTag key={s.name} name={s.name} />
                   ))}
                 </div>
               </div>
