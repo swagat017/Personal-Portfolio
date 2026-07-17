@@ -39,10 +39,17 @@ export function Contact() {
   const onSubmit = async (data: FormData) => {
     const subject = encodeURIComponent(`Portfolio contact from ${data.name}`);
     const body = encodeURIComponent(`${data.message}\n\n— ${data.name} (${data.email})`);
-    window.location.assign(`mailto:${personal.email}?subject=${subject}&body=${body}`);
+    const mailtoUrl = `mailto:${personal.email}?subject=${subject}&body=${body}`;
+
+    // A real anchor click is handled more reliably across browsers than
+    // a scripted location change, especially after an async validation step.
+    const link = document.createElement("a");
+    link.href = mailtoUrl;
+    link.click();
+
     setSent(true);
     reset();
-    setTimeout(() => setSent(false), 5000);
+    setTimeout(() => setSent(false), 8000);
   };
 
   return (
@@ -176,6 +183,16 @@ export function Contact() {
               <p className="text-xs text-slate">
                 This opens your email client with the message pre-filled. No data is stored.
               </p>
+              {sent && (
+                <p className="text-xs text-slate">
+                  Nothing happen? Your default mail app might not be set up. Email me
+                  directly at{" "}
+                  <a href={`mailto:${personal.email}`} className="text-violet hover:underline">
+                    {personal.email}
+                  </a>
+                  .
+                </p>
+              )}
             </form>
           </Reveal>
         </div>
