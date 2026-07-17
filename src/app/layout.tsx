@@ -29,8 +29,8 @@ const siteUrl = "https://swagatnepal.dev";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `${personal.name} — ${personal.title}`,
-    template: `%s — ${personal.name}`,
+    default: "Swagat Nepal",
+    template: `%s — "Swagat Nepal"}`,
   },
   description: personal.intro,
   keywords: [
