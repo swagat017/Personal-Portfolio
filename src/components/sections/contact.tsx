@@ -52,7 +52,7 @@ export function Contact() {
           index="06"
           label="Contact"
           title="Let's talk"
-          description="Open to internships and AI/ML roles - reach out directly or send a message below."
+          description="Open to internships and AI/ML roles. Reach out directly or send a message below."
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-[0.85fr_1.15fr] gap-12 lg:gap-16">
@@ -174,7 +174,7 @@ export function Contact() {
                 )}
               </button>
               <p className="text-xs text-slate">
-                This opens your email client with the message pre-filled :- no data is stored.
+                This opens your email client with the message pre-filled. No data is stored.
               </p>
             </form>
           </Reveal>

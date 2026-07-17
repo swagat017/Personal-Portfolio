@@ -20,7 +20,7 @@ export function Footer() {
             <span className="text-violet">.</span>
           </p>
           <p className="font-mono text-xs text-slate mt-1">
-            © {new Date().getFullYear()} - built with intent, one commit at a time.
+            © {new Date().getFullYear()}. Built with intent, one commit at a time.
           </p>
         </div>
 
