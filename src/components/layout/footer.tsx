@@ -40,6 +40,7 @@ export function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
+            title = "GitHub"
             className="text-slate hover:text-violet transition-colors"
           >
             <GithubIcon className="h-4 w-4" />
@@ -49,6 +50,7 @@ export function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
+            title = "LinkedIn"
             className="text-slate hover:text-violet transition-colors"
           >
             <LinkedinIcon className="h-4 w-4" />
@@ -56,6 +58,7 @@ export function Footer() {
           <a
             href={`mailto:${personal.email}`}
             aria-label="Email"
+            title = "Email"
             className="text-slate hover:text-violet transition-colors"
           >
             <Mail className="h-4 w-4" />
