@@ -12,7 +12,7 @@ export function Projects() {
           index="03"
           label="Projects"
           title="Selected work"
-          description="Four end-to-end projects spanning deep learning, classical ML, and unsupervised learning - each taken from raw data through to evaluated results."
+          description="Four end-to-end projects spanning deep learning, classical ML, and unsupervised learning, each taken from raw data through to evaluated results."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
