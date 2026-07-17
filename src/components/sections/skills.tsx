@@ -21,7 +21,7 @@ export function Skills() {
           index="02"
           label="Skills"
           title="Tools I reach for"
-          description="Grouped the way I actually use them - from core programming to the ML and DL libraries behind each project below."
+          description="Grouped the way I actually use them, from core programming to the ML and DL libraries behind each project below."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
